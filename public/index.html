@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My E-Commerce Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🛒 My E-Commerce Store</h1>
+
+    <p>Simple Online Shopping Website</p>
+
+</header>
+
+
+<div class="container">
+
+
+    <!-- LOGIN -->
+
+    <section class="box">
+
+        <h2>🔐 Login</h2>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Username">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password">
+
+        <select id="role">
+
+            <option value="user">
+                User
+            </option>
+
+            <option value="admin">
+                Admin
+            </option>
+
+        </select>
+
+        <button onclick="login()">
+            Login
+        </button>
+
+        <p id="loginMessage"></p>
+
+    </section>
+
+
+
+    <!-- ADD PRODUCT -->
+
+    <section class="box">
+
+        <h2>➕ Add Product</h2>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Product Name">
+
+        <input
+            type="number"
+            id="price"
+            placeholder="Price">
+
+        <input
+            type="text"
+            id="description"
+            placeholder="Description">
+
+        <button onclick="addProduct()">
+            Add Product
+        </button>
+
+    </section>
+
+
+
+    <!-- PRODUCTS -->
+
+    <h2>🛍️ Products</h2>
+
+    <div id="products">
+        Loading...
+    </div>
+
+
+
+    <!-- CART -->
+
+    <h2>🛒 Shopping Cart</h2>
+
+    <div id="cart">
+        Cart is empty.
+    </div>
+
+    <h3 id="total">
+        Total: ₹0
+    </h3>
+
+    <button onclick="checkout()">
+        Checkout
+    </button>
+
+
+
+    <!-- ORDER TRACKING -->
+
+    <section class="box">
+
+        <h2>📦 Order Tracking</h2>
+
+        <p id="orderStatus">
+            No order placed.
+        </p>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
